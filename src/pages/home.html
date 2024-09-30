@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Page</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        #menu-toggle:checked ~ #dropdown-menu {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body class="mb-7 bg-white text-gray-800"> 
+
+    <!-- <-- Main Container --> 
+    <main class="mx-8 md:mx-48 "> 
+
+ 
+        <!-- Header Navigation Bar -->
+        <header id="navbar" class="flex items-center justify-between p-6 bg-white shadow-md transition-transform duration-300">
+            <div class="flex items-center">
+                <a href="#Profile" class="flex items-center transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">
+                    <img src="../assets/pictures/h.JPG" alt="Profile Picture" class="rounded-full mr-2 w-12 h-12 object-cover" height="50" width="50">
+                    <span class="font-semibold">Hammad Zahid</span>
+                </a>
+            </div>
+    
+            <nav class="hidden md:flex mx-auto max-w-7xl items-center font-semibold justify-end space-x-6" aria-label="Global">
+                <ul class="flex space-x-6">
+                    <li><a href="#Profile" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Profile</a></li>
+                    <li><a href="#Gallery" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Gallery</a></li>
+                    <li><a href="#Career-Goals" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Career Goals</a></li>
+                    <li><a href="#Projects" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Projects</a></li>
+                    <li><a href="#SkillsAndInterests" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Skills and Interests</a></li>
+                    <li><a href="#Contact-us" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Contact Us</a></li>
+                </ul>
+            </nav>
+    
+            <div class="md:hidden">
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </label>
+    
+                <div class="hidden flex-col space-y-4 mt-4" id="dropdown-menu">
+                    <ul class="flex flex-col space-y-2">
+                        <li><a href="#Profile" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Profile</a></li>
+                        <li><a href="#Gallery" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Gallery</a></li>
+                        <li><a href="#Career-Goals" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Career Goals</a></li>
+                        <li><a href="#Projects" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Projects</a></li>
+                        <li><a href="#SkillsAndInterests" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Skills and Interests</a></li>
+                        <li><a href="#Contact-us" class="transition-transform transform hover:scale-100 hover:translate-y-1 hover:text-gray-500">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+            
+        <!-- Introduction Section -->
+        <section class="relative bg-cover bg-center h-96" style="background-image: url('../assets/pictures/hero-banner.jpg');">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-white text-center">
+                    <h1 class="text-3xl font-bold">Welcome to My Portfolio</h1>
+                    <p class="mt-4">I'm Hammad, a passionate Software Engineer with a love for creating impactful solutions.</p>
+                    <a href="#Projects" class="mt-4 inline-block px-4 py-2 bg-green-500 rounded-full text-white font-semibold hover:bg-green-600 transition duration-300">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Home Section -->
+        <!-- Personal Profile Section -->
+    <section id="Profile" class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-8">
+    <div class="col-span-3 bg-gradient-to-r from-yellow-100 to-green-100 hover:bg-gradient-to-l hover:from-green-100 hover:to-yellow-100 rounded-3xl shadow-lg flex items-center justify-center transition-all duration-500 ease-in-out w-full" style="height: 70vh;">
+        <div class="text-left mx-10 text-gray-800"> <!-- Added text color -->
+            <h1 class="text-xl md:text-2xl font-bold">About Me</h1>
+            <p class="mt-4">
+                Hi, I'm Hammad, an experienced Software Engineer with over 2 years of expertise in Web Development, Spring Boot, Network Programming, REST APIs, Microservices, System Design, and Database Design. I am skilled in creating effective solutions and leading projects in team settings, seeking to apply my skills and experience to contribute to innovative projects and drive organizational success.
+            </p>
+            <div class="social-links mt-4 flex space-x-4">
+                <a href="https://www.linkedin.com/in/hammad-zahid-61b502241/" target="_blank" class="text-blue-500 hover:text-blue-700">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="hhttps://github.com/Ninjaa-a/DS" target="_blank" class="text-gray-800 hover:text-gray-600">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="text-blue-400 hover:text-blue-600">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com/yourprofile" target="_blank" class="text-blue-600 hover:text-blue-800">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-span-2 bg-slate-600 rounded-3xl text-center w-full overflow-hidden" style="height: 70vh;">
+        <div class="flex items-center justify-center h-full">
+            <img src="../assets/pictures/h.JPG" class="rounded-3xl scale-100 transition-transform transform hover:scale-110 duration-700 w-full h-full object-cover" alt="Profile Picture">
+        </div>
+    </div>
+</section>
+
+        
+        
+       <!-- Gallery Section -->
+    <section id="Gallery">
+        <h1 class="m-6 font-semibold text-2xl">Gallery</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <article class="relative overflow-hidden col-span-1 bg-slate-500 rounded-3xl shadow-lg" style="height: 70vh;">
+                <h2 class="sr-only">Cricket Image</h2>
+                <img src="../assets/pictures/fast.jpeg" class="w-full h-full object-cover transition-transform duration-700 transform hover:scale-105" alt="Cricket Image">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-2 text-white text-center">Chasing Victory on the Field!</div>
+            </article>
+            
+            <article class="relative overflow-hidden col-span-1 bg-slate-500 rounded-3xl shadow-lg" style="height: 70vh;">
+                <h2 class="sr-only">Beach Image</h2>
+                <img src="../assets/pictures/sea.jpeg" class="w-full h-full object-cover transition-transform duration-700 transform hover:scale-105" alt="Beach Image">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-2 text-white text-center">Where the Ocean Meets Serenity!</div>
+            </article>
+            
+            <article class="relative overflow-hidden col-span-1 bg-slate-500 rounded-3xl shadow-lg" style="height: 70vh;">
+                <h2 class="sr-only">Chat Project Image</h2>
+                <img src="../assets/pictures/chat.jpeg" class="w-full h-full object-cover transition-transform duration-700 transform hover:scale-105" alt="Chat Project Image">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-2 text-white text-center">Connecting Conversations, One Click Away!</div>
+                <div class="absolute inset-0 flex items-center justify-center hover:opacity-80 transition-opacity duration-300">
+                    <a class="text-white text-xl transform hover:scale-110 duration-700" href="GalleryPage.html">View More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+        
+        
+        
+        
+        <!-- Career Goals Section -->
+        <section id="Career-Goals">
+            <h1 class="m-6 font-semibold text-2xl">Career Goals</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <article class="relative overflow-hidden col-span-1 bg-slate-500 rounded-3xl shadow-lg" style="height: 70vh;">
+                    <img src="../assets/pictures/sw.png" class="w-full h-full object-cover transition-transform duration-700 transform hover:scale-105" alt="Short-Term Goals">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 transition-opacity duration-300">
+                        <h2 class="text-white text-xl font-semibold">Short-Term Goals</h2>
+                        <ul class="text-white mt-2 text-center">
+                            <li>✔️ Enhance my skills in full-stack development.</li>
+                            <li>✔️ Complete at least two major projects.</li>
+                            <li>✔️ Attend tech conferences to expand my network.</li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <article class="relative overflow-hidden col-span-1 bg-slate-500 rounded-3xl shadow-lg" style="height: 70vh;">
+                    <img src="../assets/pictures/cy.png" class="w-full h-full object-cover transition-transform duration-700 transform hover:scale-105" alt="Long-Term Goals">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 transition-opacity duration-300">
+                        <h2 class="text-white text-xl font-semibold">Long-Term Goals</h2>
+                        <ul class="text-white mt-2 text-center">
+                            <li>✔️ Lead a team of developers on innovative projects.</li>
+                            <li>✔️ Contribute to open-source projects.</li>
+                            <li>✔️ Become a thought leader in the tech industry.</li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <article class="relative overflow-hidden col-span-1 bg-slate-500 rounded-3xl shadow-lg" style="height: 70vh;">
+                    <img src="../assets/pictures/cyber.png" class="w-full h-full object-cover transition-transform duration-700 transform hover:scale-105" alt="Motivational Quote">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 transition-opacity duration-300">
+                        <blockquote class="text-white text-xl italic text-center">"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."</blockquote>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        
+
+        <!-- Projects Section -->
+        <section id="Projects">
+            <h1 class="m-6 font-semibold text-2xl">Projects</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <article class="relative overflow-hidden col-span-1 bg-slate-500 rounded-3xl shadow-lg">
+                    <a href="https://github.com/Ninjaa-a/web" target="_blank">
+                        <img src="../assets/pictures/web.png" class="w-full h-48 object-cover transition-transform duration-700 transform hover:scale-105" alt="Project Image">
+                        <div class="p-4 text-white">
+                            <h2 class="font-semibold text-lg">Web Project Title</h2>
+                            <p class="text-sm">This project is a responsive web application built using React and Node.js. It features user authentication, real-time data updates, and a clean UI.</p>
+                            <p class="text-xs text-gray-300 mt-1">Technologies Used: HTML, CSS, JavaScript, React, Node.js</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="relative overflow-hidden col-span-1 bg-slate-500 rounded-3xl shadow-lg">
+                    <a href="https://github.com/Ninjaa-a/DS" target="_blank">
+                        <img src="../assets/pictures/rust.png" class="w-full h-48 object-cover transition-transform duration-700 transform hover:scale-105" alt="Project Image">
+                        <div class="p-4 text-white">
+                            <h2 class="font-semibold text-lg">Data Structures Project Title</h2>
+                            <p class="text-sm">An interactive project showcasing various data structures implemented in Rust, complete with visualizations and performance comparisons.</p>
+                            <p class="text-xs text-gray-300 mt-1">Technologies Used: Rust, Algorithms</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <article class="relative overflow-hidden col-span-1 bg-slate-500 rounded-3xl shadow-lg">
+                    <a href="https://github.com/Ninjaa-a/DS" target="_blank">
+                        <img src="../assets/pictures/nest.png" class="w-full h-48 object-cover transition-transform duration-700 transform hover:scale-105" alt="Project Image">
+                        <div class="p-4 text-white">
+                            <h2 class="font-semibold text-lg">NestJS Project Title</h2>
+                            <p class="text-sm">A robust backend application developed with NestJS, featuring RESTful APIs and JWT authentication for secure user management.</p>
+                            <p class="text-xs text-gray-300 mt-1">Technologies Used: NestJS, TypeScript</p>
+                        </div>
+                    </a>
+                </article>
+        
+                <article class="relative overflow-hidden col-span-1 bg-slate-500 rounded-3xl shadow-lg">
+                    <a href="https://github.com/Ninjaa-a/DS" target="_blank">
+                        <img src="../assets/pictures/git.png" class="w-full h-48 object-cover transition-transform duration-700 transform hover:scale-105" alt="Project Image">
+                        <div class="p-4 text-white">
+                            <h2 class="font-semibold text-lg">Git Project Title</h2>
+                            <p class="text-sm">A comprehensive guide and utility tool for Git, helping users manage repositories, branches, and merges efficiently.</p>
+                            <p class="text-xs text-gray-300 mt-1">Technologies Used: Git, Version Control</p>
+                        </div>
+                    </a>
+                </article>
+        
+                <article class="relative overflow-hidden col-span-1 bg-slate-500 rounded-3xl shadow-lg">
+                    <a href="https://github.com/Ninjaa-a/DS" target="_blank">
+                        <img src="../assets/pictures/infosec.png" class="w-full h-48 object-cover transition-transform duration-700 transform hover:scale-105" alt="Project Image">
+                        <div class="p-4 text-white">
+                            <h2 class="font-semibold text-lg">InfoSec Project Title</h2>
+                            <p class="text-sm">An information security project focusing on penetration testing techniques, including various security assessments and tools.</p>
+                            <p class="text-xs text-gray-300 mt-1">Technologies Used: Python, Security Protocols</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+        
+        
+        
+        
+    <!-- Skills and Interests Section -->
+    <section id="SkillsAndInterests">
+        <h1 class="m-6 font-semibold text-2xl">Skills and Interests</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="col-span-1 flex flex-col justify-between bg-white p-4 rounded-lg shadow-md">
+                <h2 class="font-semibold text-xl mb-4">Skills</h2>
+                <ul class="space-y-6">
+                    <li class="relative">
+                        <span>MERN Stack</span>
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 80%;"></div>
+                        </div>
+                        <span class="absolute left-0 right-0 text-center opacity-0 hover:opacity-100 transition-opacity duration-300">80%</span>
+                    </li>
+                    <li class="relative">
+                        <span>Network Programming</span>
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 90%;"></div>
+                        </div>
+                        <span class="absolute left-0 right-0 text-center opacity-0 hover:opacity-100 transition-opacity duration-300">90%</span>
+                    </li>
+                    <li class="relative">
+                        <span>Java Development</span>
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 70%;"></div>
+                        </div>
+                        <span class="absolute left-0 right-0 text-center opacity-0 hover:opacity-100 transition-opacity duration-300">70%</span>
+                    </li>
+                    <li class="relative">
+                        <span>Quality Assurance</span>
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 60%;"></div>
+                        </div>
+                        <span class="absolute left-0 right-0 text-center opacity-0 hover:opacity-100 transition-opacity duration-300">60%</span>
+                    </li>
+                    <li class="relative">
+                        <span>Next.js</span>
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 75%;"></div>
+                        </div>
+                        <span class="absolute left-0 right-0 text-center opacity-0 hover:opacity-100 transition-opacity duration-300">75%</span>
+                    </li>
+                    <!-- New Skills -->
+                    <li class="relative">
+                        <span>REST APIs</span>
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 85%;"></div>
+                        </div>
+                        <span class="absolute left-0 right-0 text-center opacity-0 hover:opacity-100 transition-opacity duration-300">85%</span>
+                    </li>
+                    <li class="relative">
+                        <span>Microservices</span>
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 80%;"></div>
+                        </div>
+                        <span class="absolute left-0 right-0 text-center opacity-0 hover:opacity-100 transition-opacity duration-300">80%</span>
+                    </li>
+                    <li class="relative">
+                        <span>Firebase</span>
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 75%;"></div>
+                        </div>
+                        <span class="absolute left-0 right-0 text-center opacity-0 hover:opacity-100 transition-opacity duration-300">75%</span>
+                    </li>
+                    <li class="relative">
+                        <span>Database Management</span>
+                        <div class="bg-gray-200 rounded-full h-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 85%;"></div>
+                        </div>
+                        <span class="absolute left-0 right-0 text-center opacity-0 hover:opacity-100 transition-opacity duration-300">85%</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-span-1 hidden md:flex relative overflow-hidden rounded-3xl shadow-lg flex items-stretch">   
+                <img src="../assets/pictures/skill.png" class="w-full h-full object-cover" alt="Skills and Interests Image">
+            </div>
+        </div>
+
+        <!-- Interests Section -->
+        <div class="mt-8 p-4 bg-white rounded-lg shadow-md">
+            <h2 class="font-semibold text-xl mb-4">Interests</h2>
+            <p>I enjoy exploring new technologies, contributing to open-source projects, and learning about system design and architecture. In my free time, I love hiking, photography, and experimenting with new recipes in the kitchen.</p>
+        </div>
+    </section> 
+
+        
+        
+        
+        
+        
+
+        <!-- Contact Us Section -->
+        <section class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-8">
+            <div class="col-span-1 md:col-span-3 bg-gradient-to-r from-yellow-100 to-green-100 hover:bg-gradient-to-l hover:from-green-100 hover:to-yellow-100 rounded-3xl shadow-lg p-6">
+                <h1 class="font-semibold text-2xl mb-4 text-center md:text-left">Contact Us</h1>
+                <p class="mb-6 text-center md:text-left">If you have any questions or feedback, feel free to reach out!</p>
+                
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="First Name" class="p-2 border rounded-lg w-full" required>
+                        <input type="text" placeholder="Last Name" class="p-2 border rounded-lg w-full" required>
+                    </div>
+                    <input type="email" placeholder="Email" class="p-2 border rounded-lg w-full" required>
+                    <input type="text" placeholder="Subject" class="p-2 border rounded-lg w-full" required>
+                    <textarea placeholder="Message" class="p-2 border rounded-lg h-24 w-full" required></textarea>
+                </div>
+                
+                <div class="flex justify-center mt-4">
+                    <button class="bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-600 transition-all duration-300">Submit</button>
+                </div>
+            </div>
+            
+            <div class="hidden md:col-span-2 bg-white rounded-3xl text-center overflow-hidden md:block">
+                <div class="flex items-center justify-center h-full">
+                    <img src="../assets/pictures/contact.png" class="rounded-3xl scale-100 transition-transform transform hover:scale-110 duration-700 w-full h-full object-cover" alt="Contact Image">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Email and Phone Information -->
+        <section class="mt-8 text-center">
+            <h2 class="font-semibold text-xl">Contact Information</h2>
+            <p class="mt-2">Email: <a href="mailto:hammadzahid254@gmail.com" class="text-blue-500">your-email@example.com</a></p>
+            <p class="mt-2">Phone: <span class="text-blue-500">+(92)341 5806133</span></p>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="text-center py-4">
+            <p class="text-black">© 2024 Hammad Zahid. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="https://github.com/dashboard" target="_blank">
+                    <img src="../assets/pictures/github.png" alt="GitHub" class="w-8 h-8 rounded-full transition-transform transform hover:scale-110">
+                </a>
+                <a href="https://www.linkedin.com/in/hammad-zahid-61b502241/" target="_blank">
+                    <img src="../assets/pictures/linkedin.png" alt="LinkedIn" class="w-8 h-8 rounded-full transition-transform transform hover:scale-110">
+                </a>
+                <a href="https://www.instagram.com/hammad.zahid/" target="_blank">
+                    <img src="../assets/pictures/insta.png" alt="Instagram" class="w-8 h-8 rounded-full transition-transform transform hover:scale-110">
+                </a>
+            </div>
+        </footer>
+        
+
+        
+        
+        
+        
+        
+    </main>
+
+</body>
+</html>  
